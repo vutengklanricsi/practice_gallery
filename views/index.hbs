@@ -1,0 +1,18 @@
+<h2>{{name}}'s gallery</h2>
+
+
+<form method="post" action="description" enctype="multipart/form-data">
+  <label for="input_message">Describe your Gallery: </label><br>
+  <textarea id="input_message" rows="5" cols="30" type="text" name="description"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<form method="post" action="/image" enctype="multipart/form-data">
+  <input type="file" id="imageUpload" name="imageUpload">
+  <input type="submit" value="Submit">
+</form>
+
+<h2>{{postText}}</h2>
+
